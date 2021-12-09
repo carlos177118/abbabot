@@ -61,8 +61,8 @@ heroku/nodejs
 🦄 pkg install ffmpeg -y 
 🦄 pkg install wget
 🦄 pkg install imagemagick -y
-🦄 git clone https://github.com/DGXeon/DogeBot
-🦄 cd DogeBot
+🦄 git clone https://github.com/carlos177118/abbabot
+🦄 cd abbabot
 🦄 ls
 🦄 rm -rf session.json
 🦄 npm install
