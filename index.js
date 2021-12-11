@@ -378,8 +378,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
-       const daftar2 = '```Click the button below to verify bro or type 8473\n𝐃𝐨𝐠𝐞 𝐁𝐨𝐭```'
+const daftar1 = `Hola ${pushname} ${ucapanWaktu} \n\nAntes de usar el bot verifique primero `
+       const daftar2 = '```Haga clic en el botón de abajo para verificar hermano o escriba 8473\n𝐃𝐨𝐠𝐞 𝐁𝐨𝐭```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -420,16 +420,16 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 シ︎",
+      wait: "espera un minuto シ︎",
       success: "Success シ︎",
-      wrongFormat: "Wrong format, try again in the menu",
+      wrongFormat: "Formato incorrecto, inténtalo de nuevo en el menú.",
       error: {
-        stick: "not that sticker :v",
-        apiz: "error!, maybe because the api key has expired",
-        Iv: "The link is error :v",
+        stick: "no esa pegatina :v",
+        apiz: "error!, tal vez porque la clave api ha expirado",
+        Iv: "El enlace es un error :v",
       },
       only: {
-        group: "Only on chat group",
+        group: "Solo en el grupo de chat",
       },
     };
 
@@ -760,7 +760,7 @@ if (budy.toLowerCase() === `8473`){
 		if (isRegister) return 
 		    register.push(sender)
 		    fs.writeFileSync('./database/user/registered.json', JSON.stringify(register))
-		    teks = `Verification success\n\nPlease send *!menu* to view menu`
+		    teks = `Éxito de la verificación\n\nPor favor envíe *!menu* para ver el menú`
 		    xeon.sendMessage(from, teks, text, {quoted: fkontak })
 }          /*if (!mek.key.fromMe && banChats === false) return*/
 	              
@@ -962,12 +962,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `Whatsapp`,
-                "body": `wa.me/916909137213`,
+                "body": `wa.me/50763902442`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/916909137213`,
+                "mediaUrl": `wa.me/50763902442`,
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/916909137213`,
+                "sourceUrl": `wa.me/50763902442`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -1228,7 +1228,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return reply("only admin");
-        reply("ANTILINK DETECTED!! SORRY YOU WILL BE KICKED ;V");
+        reply("ANTI ENLACE DETECTADO!! Lo siento seras pateado ;V");
         xeon.groupRemove(from, [sender]);
       }
     }
@@ -1324,8 +1324,8 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *USER REGISTRATION* 」
-*Thank you for registering in the 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 Database*
+	         const anuu = `「 *REGISTRO DE USUARIO* 」
+*Gracias por registrarse en el 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 Base de datos*
 
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
@@ -1344,7 +1344,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			xeon.updatePresence(from, Presence.composing)
-			reply(`*Thank you for being registered 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭*`)
+			reply(`*Gracias por estar registrado 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭*`)
 		}, 2000)
         break
       
@@ -1360,7 +1360,7 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
+       txtt =`Hola ${pushname} 👋\n\nSI ESTÁ UTILIZANDO MOD WHATSAPP Y LOS BOTONES NO SE MUESTRAN, ESCRIBE #allmenu`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU🐶'},type:1},
@@ -1780,7 +1780,7 @@ case 'owner':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'Busy!!')
                await sleep(1000)
-               haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
+               haibg =`Hola ${pushname}\nEse es mi dueño, de que quieres saber??`
                buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'PM ON WHATSAPP'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
                prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
@@ -2009,7 +2009,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
  footerText: '𝐃𝐨𝐠𝐞 𝐁𝐨𝐭',
- description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
+ description: `Hola @${sender.split('@')[0]}, Por favor seleccione el menú aquí`,
  sections: [
                      {
                       "title": `Xeon`,
@@ -2443,7 +2443,7 @@ case 'triggered':
 case 'script':
 		case 'sc':
 		case 'sourcecode':
-		xeon.sendMessage(from, { text: "https://github.com/DGXeon/DogeBot", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		xeon.sendMessage(from, { text: "https://github.com/carlos177118/abbabot", matchedText: 'nopee', description: "", title: "Qué estás haciendo?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
       //------------------< Sticker Cmd >-------------------
       case "addcmd":
@@ -2730,10 +2730,10 @@ case 'linkgroup':
 				case 'grouplink':
 				case 'gruplink':
               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-				if (!isGroup) return reply('this feature is only for groups')
-                   if (!isBotGroupAdmins) return reply('bot not admin')
+				if (!isGroup) return reply('esta función es solo para grupos')
+                   if (!isBotGroupAdmins) return reply('bot no administrador')
 					linkgc = await xeon.groupInviteCode(from)
-					yeh = `https://chat.whatsapp.com/${linkgc}\n\n${groupName} *Group Link*`
+					yeh = `https://chat.whatsapp.com/${linkgc}\n\n${groupName} *Enlace de grupo*`
 					xeon.sendMessage(from, yeh, text, { quoted: mek })
 					break
 					case 'resetlinkgc':
@@ -2812,7 +2812,7 @@ break
 					      case "play":
         if (args.length === 0)
           return reply(
-            `Send orders *${prefix}play* _The title of the song to be searched_`
+            `Send orders *${prefix}play* _El título de la canción que se buscará._`
           );
         var srch = args.join("");
         aramas = await yts(srch);
@@ -3489,7 +3489,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} left` : ""}
         break;
       case "kick":
         if (!isGroup) return reply('this feature is only for groups');
-        if (!isGroupAdmins && !mek.key.fromMe) return reply('only admin can use this feature');
+        if (!isGroupAdmins && !mek.key.fromMe) return reply('solo el administrador puede usar esta función');
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (
           mek.message.extendedTextMessage === undefined ||
@@ -3511,17 +3511,17 @@ ${members > 1 ? `${members - reads.length - deliveries.length} left` : ""}
         break;
       case "add":
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-			if (!isGroup) return reply('this feature is only for groups')
+			if (!isGroup) return reply('esta función es solo para grupos')
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
-			if (args.length < 1) return reply('do you want to add a genie?')
-					if (args[0].startsWith('08')) return reply('use the country code')
+			if (args.length < 1) return reply('quieres agregar un genio?')
+					if (args[0].startsWith('08')) return reply('usa el código del país')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						xeon.groupAdd(from, [num])
 					} catch (e) {
 						console.log('Error :', e)
-						reply('Failed to add target, maybe because its private🤔')
+						reply('No se pudo agregar el destino, tal vez porque es privado🤔')
 					}
 					break;
 case 'igstory': 
@@ -3924,7 +3924,7 @@ case 'hacked':
                 await sleep(1000)
                 xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
-  reply('https://github.com/DGXeon')
+  reply('https://github.com/carlos177118')
 					break;
    case 'ss':
       reply(mess.wait)
@@ -4052,12 +4052,12 @@ costick3 = await xeon.prepareMessageFromContent(from,{
 xeon.relayWAMessage(costick3)
 break
       case "rentbot":
-        if (!mek.key.fromMe) return reply("Cant be a rentbot in a bot");
+        if (!mek.key.fromMe) return reply("No puedo ser un rentbot en un bot");
         jadibot(reply, xeon, from);
         break;
       case "stoprentbot":
         if (!mek.key.fromMe)
-          return reply("cant stop being bot except the owner");
+          return reply("No puedo dejar de ser bot excepto el dueño");
         stopjadibot(reply);
         break;
       case "listbot":
@@ -5630,11 +5630,11 @@ break
 if (!isOwner && !itsMe) return
 if (args.length < 1) return reply('Select on or off')
 if (args[0] === "on") {
-if(welcom)return reply('It has been activated before!')
+if(welcom)return reply('Ha sido activado antes!')
 welcom = true
 reply(`Succesfully activated welcome`)
 } else if (args[0] === "off") {
-if(!welcom)return reply('It has been deactivated before!')
+if(!welcom)return reply('Ha sido desactivado antes!')
 welcom = false
 reply(`Successfully turned off welcome`)
 } else {
