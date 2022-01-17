@@ -1423,7 +1423,7 @@ ${readmore}
 シ︎INSTAGRAM:
 \\ @elabba._
 シ︎GRUPO DE WHATSAPP:
-\\ PRONTO
+\\ https://chat.whatsapp.com/BJQRGOoPO7W7jTU6ChSIrN
  
  ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}off
